@@ -12,8 +12,8 @@ with open(config['fastqs_ref']) as fh:
 
 rule all:
 	input: 
-		# expand(config['out'] + "/{sample}.{ext}", sample = fastq_ref.keys(), ext = ['png', 'rds'])
-		expand(config['out'] + "/{sample}.{ext}", sample = config['samples'], ext = ['png', 'rds'])
+		expand(config['out'] + "/{sample}.{ext}", sample = config['samples'], ext = ['png', 'rds']),
+		expand(config['data'] + "/{sample}.stamp", sample = config['samples'])
 
 rule cellranger_count:
 	params:

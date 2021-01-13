@@ -1,18 +1,33 @@
-# out: ../data/snRNA/rds
+# where to write output files
 out: out
+
+# path to directory where outputs of cellranger count are stored 
+# (can specify same as output directory above)
 data: /iblm/netapp/home/jezhou/rat_snrnaseq_pipeline/data
+
+# tsv file with four columns:
+# <RFID> <Treatment> <Addiction index> <FASTQ prefix>
+# include colnames in file
 fastqs_ref: /iblm/netapp/home/jezhou/rat_snrnaseq_pipeline/data/snRNA/rats_fastq_ref.tsv
+
+# path directory containing subdirectories named for each sample (RFID)
+# each of these subdirectories contains all FASTQ files for that sample
 fastqs_dir: /iblm/netapp/home/jezhou/rat_snrnaseq_pipeline/data/snRNA/fastq
+
+# path to custom reference genome built with cellranger mkfastq
 ref_transcriptome: /iblm/netapp/home/jezhou/rat_snrnaseq_pipeline/data/rn6_rna/rn6_premrna_10x
 
+# input params for cellranger
 expect_cells: 7000
 chemistry: auto
 localmem: 128
 localcores: 8
 
+# values for min.cells and min.features arguments of Seurat CreateSeuratObject() function
 min_cells: 10
 min_features: 200
 
+# list of your sample names
 samples: [933000320047328,
 933000120138592,
 933000120138586,
