@@ -1,0 +1,5 @@
+notebooks/
+mak_seurat_dag.png
+out/
+.snakemake/
+._Snakefile

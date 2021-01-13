@@ -1,0 +1,36 @@
+# out: ../data/snRNA/rds
+out: out
+data: /iblm/netapp/home/jezhou/rat_snrnaseq_pipeline/data
+fastqs_ref: /iblm/netapp/home/jezhou/rat_snrnaseq_pipeline/data/snRNA/rats_fastq_ref.tsv
+fastqs_dir: /iblm/netapp/home/jezhou/rat_snrnaseq_pipeline/data/snRNA/fastq
+ref_transcriptome: /iblm/netapp/home/jezhou/rat_snrnaseq_pipeline/data/rn6_rna/rn6_premrna_10x
+
+expect_cells: 7000
+chemistry: auto
+localmem: 128
+localcores: 8
+
+min_cells: 10
+min_features: 200
+
+samples: [933000320047328,
+933000120138592,
+933000120138586,
+933000320046084,
+933000320046077,
+933000120138609,
+933000320186802,
+933000320047225,
+933000320046609,
+933000320047001,
+933000320047132,
+933000320186801,
+933000320046621,
+933000320046625,
+933000320047104,
+933000320045674,
+Rat_Opioid_HS_1, 
+Rat_Opioid_HS_2,
+Rat_Opioid_HS_3,
+Rat_Opioid_HS_4,
+Rat_Amygdala_787A_all_seq]
