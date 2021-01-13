@@ -19,7 +19,7 @@ Specify path where you want outputs of `cellranger count` to be written - can sp
 This specifies a .tsv file with four columns:
 | RFID                              | Treatment                      | Addiction index      | FASTQ prefix                                      |
 |-----------------------------------|--------------------------------|----------------------|---------------------------------------------------|
-| Should correspond to sample names | e.g. cocaine, oxycodone, naive | e.g. high, low, none | Sample prefix for all FASTQ files for this sample; see [10x docs] for details](https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/using/fastq-input) |
+| Should correspond to sample names | e.g. cocaine, oxycodone, naive | e.g. high, low, none | Sample prefix for all FASTQ files for this sample; see [10x docs](https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/using/fastq-input) for details |
 
 The tsv file should keep the row of header names. Header names can be changed.
 
